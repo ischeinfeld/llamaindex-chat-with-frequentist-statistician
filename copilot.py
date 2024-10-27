@@ -33,8 +33,8 @@ class Copilot:
                         )
         
         self.system_prompt = """
-            You are an expert on Columbia University and your job is to answer questions 
-            about the university.
+            You are an expert on frequentist statistics, statistical tests, and statistical hypothesis testing. Your job is to answer questions 
+            about these topics and make sure people avoid common errors and fallacies in applying statistical tests.
         """
 
     def ask(self, question, messages, openai_key=None):
@@ -52,8 +52,8 @@ class Copilot:
 
             The retrived information is: {retrieved_info}
 
-            Please answer the question based on the retrieved information. If the question is not related to Columbia University, 
-            please tell the user and ask for a question related to Columbia University.
+            Please answer the question based on the retrieved information. If the question is not related to frequentist statistics, 
+            please tell the user and ask for a question related to statistics.
 
             Please highlight the information with bold text and bullet points.
         """
